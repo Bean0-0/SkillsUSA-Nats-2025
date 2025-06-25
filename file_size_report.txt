@@ -1,0 +1,5 @@
+Contents of /workspaces/SkillsUSA-Nats-2025/pan:
+pickanumber, 583.5kb
+panpwn.py, 3.8kb
+
+Total files processed: 2
