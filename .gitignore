@@ -1,0 +1,26 @@
+# Ignore large files that exceed GitHub's size limits
+KaliVM/rockyou.txt
+*.txt
+!README.md
+
+# Ignore other common large files
+*.iso
+*.img
+*.vmdk
+*.log
+*.dump
+*.bin
+
+# Ignore temporary files
+*.tmp
+*.temp
+*~
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
