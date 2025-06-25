@@ -1,0 +1,2 @@
+#!/usr/bin/env python3
+import subprocess, sys; [print(f"Password: {pw.strip()}\nOutput: {subprocess.run(['./rockyou'], input=pw, text=True, capture_output=True, timeout=5).stdout}") or sys.exit(0) for pw in open(sys.argv[1] if len(sys.argv) > 1 else 'rockyou.txt', 'r', encoding='utf-8', errors='ignore') if pw.strip() and "Incorrect password" not in subprocess.run(['./rockyou'], input=pw, text=True, capture_output=True, timeout=5).stdout]
