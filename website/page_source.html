@@ -1,4 +1,54 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-<title>404 Not Found</title>
-<h1>Not Found</h1>
-<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+<html><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin Login</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<style type="text/css">
+		.workspace {
+			display: flex;
+  			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		.form-signin {
+			width: 100%;
+			max-width: 330px;
+			padding: 15px;
+			margin: auto;
+		}
+	</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1241.0" data-gr-ext-installed="" style="overscroll-behavior-x: auto;">
+	
+		
+	
+	<div class="workspace">
+		<main class="form-signin">
+			<form action="/login" method="POST" id="login-form">
+				<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" name="username" id="uname" placeholder="Username">
+					<label for="username">Username</label>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="password" class="form-control" name="password" id="pwd" placeholder="Password">
+					<label for="password">Password</label>
+				</div>
+				<button type="submit" class="w-100 btn btn-lg btn-primary">Submit</button>
+			</form>
+		</main>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">	
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('#login-form').submit(function() {
+			var txt = $("#uname").val();
+			txt = txt.replace(/[^a-zA-Z 0-9]+/g, '')
+			$("#uname").val(txt);
+			return true;
+		});
+	</script>
+
+<div style="z-index: 2147483647 !important; padding: 0px !important; margin: 0px !important; border-radius: 8px !important; position: fixed !important; color-scheme: normal !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.18) 0px 8px 15px 6px !important; border: 1px solid rgba(0, 0, 0, 0.9) !important; overflow: hidden !important; backdrop-filter: blur(20px) !important; background-color: rgba(35, 35, 35, 0.83) !important; top: 124px !important; left: -999999px !important; opacity: 0 !important; visibility: hidden !important; height: 69.5px !important; width: 305px !important;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
