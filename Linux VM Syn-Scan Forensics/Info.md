@@ -1,0 +1,3 @@
+One of our Kali terminal sniffing nodes (linked to below) captured a synscan attack on our network from an unauthorized piece of hardware. The PCAP file is located at /home/student/synflood.pcapng on this Kali terminal system. Log into the Kali sniffer, and use termshark (command line wireshark) to determine the MAC address of the attacking system. The flag is the human readable (English) Vendor ID of the MAC address.
+
+Flag = Flextronics International
